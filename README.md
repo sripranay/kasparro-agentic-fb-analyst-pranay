@@ -75,6 +75,7 @@ Breaks the user query into structured steps:
 │   └── utils/         # loader, kpi calculations
 ├── run.py             # main orchestrator
 └── README.md
+```
 ---
 
 ## ▶️ How to Run the System
@@ -114,17 +115,14 @@ arduino
 Copy code
 config/config.yaml
 ```
-### **Evaluation Criteria Covered**
-Planner → Evaluator loop implemented
+---
 
-Structured prompts + reasoning
+## Badges
 
-Quantitative validation
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
+![Agents](https://img.shields.io/badge/Agents-5-orange)
 
-Creative message generation
-
-Logs + JSON outputs
-
-Final report included
 
 

@@ -1,35 +1,50 @@
-# Creative Agent Prompt (documentation)
+# Creative Generator Prompt
 
-Purpose:
-- Generate new creative ad ideas to improve CTR and engagement.
-- Rewrite existing creative messages in multiple variations.
-- Follow brand-safe tone and short ad-copy style.
+---
 
-Input: JSON from validated insights, including:
-- low CTR campaigns
-- existing creative message
-- performance metrics
+## Goal
+Generate improved creative ideas (headlines, bodies, CTAs) for campaigns with low CTR.  
+Ground new creatives in *existing creative messages* and product context found in the dataset summary.
 
-Output: JSON:
-- campaign_name
-- original_message
-- generated_messages: list of 3–6 variations
+---
 
-Guidelines for the model:
-1. Keep messages short (3–10 words).
-2. Must include CTA such as "Shop now", "Try now", "Learn more".
-3. Follow tone of the existing creative (comfort, premium, fashion, etc.)
-4. Do NOT invent product names — use given campaign info.
-5. Each generated message should be unique.
+## Required Behaviors
 
-Example Output:
-{
-  "campaign_name": "WOMEN Seamless Everyday",
-  "original": "All-day comfort. Shop now",
-  "generated_messages": [
-    "Seamless comfort all day – Shop now",
-    "Feel the comfort. Try now",
-    "Your everyday seamless fit – Shop today",
-    "Soft comfort made for you – Shop now"
-  ]
-}
+### 1. Input:
+- List of low-CTR campaigns  
+- Campaign names  
+- Creative messages (if available)  
+- Vocabulary extracted from campaign names/messages  
+
+---
+
+### 2. Output:
+Generate **3 creative suggestions per campaign**, each containing:
+
+- **headline**
+- **body**
+- **cta**
+
+Each suggestion must:
+- Be short, engaging, and relevant to the type of product  
+- Use wording inspired by existing creative_message fields  
+- Include urgency or value-focused language (e.g., comfort, fit, discount, limited offer)  
+- Have a strong and varied CTA (e.g., “Shop Now”, “Buy Today”, “Discover More”)  
+
+---
+
+## Output Format (JSON)
+
+```json
+[
+  {
+    "campaign_name": "xyz campaign",
+    "creative_suggestions": [
+      {
+        "headline": "New Styles You'll Love",
+        "body": "Soft, breathable and made for comfort — upgrade your wardrobe today.",
+        "cta": "Shop Now"
+      }
+    ]
+  }
+]

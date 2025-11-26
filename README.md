@@ -1,6 +1,6 @@
 # Kasparro Agentic Facebook Ads Performance Analyst  
 ### Multi-Agent System for ROAS Diagnosis & Creative Recommendations  
-**Author:** Pranay  
+
 
 ---
 

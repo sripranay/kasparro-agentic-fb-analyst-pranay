@@ -1,0 +1,35 @@
+# config/config.yaml
+# Project configuration for the Kasparro Agentic FB Analyst
+
+project:
+  name: "kasparro-agentic-fb-analyst-pranay"
+  version: "0.1.0"
+  author: "Your Name"
+
+data:
+  # relative path inside repo; ensure data/synthetic_fb_ads_undergarments.csv exists
+  dataset_path: "data/synthetic_fb_ads_undergarments.csv"
+  sample_mode: true        # If true, code will run on a small sample for faster dev
+  sample_n: 1000           # number of rows for sample mode
+
+thresholds:
+  roas_drop_pct: 0.20      # 20% drop flagged as significant
+  ctr_drop_pct: 0.15       # 15% drop flagged as significant
+  ctr_low_threshold: 0.01  # CTR below this is considered low (1%)
+  roas_low_threshold: 0.5  # ROAS below this considered poor
+  spend_high_pctile: 0.9   # campaigns above 90th percentile spend considered "high spend"
+
+analysis:
+  trend_window_days: 14    # window for rolling trend calculations
+  lookback_days: 30        # how many days to check for changes
+
+outputs:
+  reports_dir: "reports"
+  logs_dir: "logs"
+  insights_file: "reports/insights.json"
+  creatives_file: "reports/creatives.json"
+  report_md: "reports/report.md"
+
+runtime:
+  random_seed: 42
+  verbose: true

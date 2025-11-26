@@ -1,0 +1,34 @@
+{
+  "validated_hypotheses": [
+    {
+      "hypothesis": "ROAS improved \u2014 campaigns are becoming more efficient.",
+      "evidence": "roas changed by 5.58% (recent: 6.574655544298444, previous: 6.227011039963705)",
+      "confidence": 0.251,
+      "validated": true
+    },
+    {
+      "hypothesis": "CTR fell \u2014 creatives may be fatiguing or less relevant.",
+      "evidence": "CTR changed by -0.73% (recent: 0.0124, previous: 0.0125)",
+      "confidence": 0.044,
+      "validated": false
+    },
+    {
+      "hypothesis": "Spend decreased \u2014 could limit reach and impressions.",
+      "evidence": "spend changed by -2.84% (recent: 150936.68, previous: 155351.96000000002)",
+      "confidence": 0.099,
+      "validated": false
+    },
+    {
+      "hypothesis": "Impressions dropped \u2014 audience size or delivery issues possible.",
+      "evidence": "impressions changed by -0.41% (recent: 86641669, previous: 86996972)",
+      "confidence": 0.057,
+      "validated": false
+    },
+    {
+      "hypothesis": "Purchases down \u2014 conversion drop or weaker creative performance.",
+      "evidence": "purchases changed by -1.59% (recent: 28517, previous: 28979)",
+      "confidence": 0.136,
+      "validated": false
+    }
+  ]
+}

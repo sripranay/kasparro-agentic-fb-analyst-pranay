@@ -117,12 +117,7 @@ config/config.yaml
 ```
 ---
 
-## Badges
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
-![Agents](https://img.shields.io/badge/Agents-5-orange)
 
 
 

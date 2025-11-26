@@ -82,8 +82,6 @@ All prompts include:
 - [x] requirements.txt
 - [x] run.py
 - [x] README.md
-
-Optional but Included:
 - [x] logs/
 - [x] helpers.py
 - [x] logger.py

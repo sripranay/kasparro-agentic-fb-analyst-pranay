@@ -1,6 +1,6 @@
 # Facebook Ads Agentic Analysis Report
 
-Generated: 2025-11-28 14:29 UTC
+Generated: 2025-11-28 16:20 UTC
 
 ## Quick summary
 

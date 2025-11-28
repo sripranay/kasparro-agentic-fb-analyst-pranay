@@ -1,14 +1,16 @@
 {
-  "campaign_name": "Men Bold Colors Drop",
-  "current_message": "No ride-up guarantee \u2014 best-selling men briefs.",
-  "ctr": 0.008,
+  "campaign_name": "WOMEN Seamless Everydy",
+  "current_message": "Doctors recommend breathable organic cotton \u2014 meet our women wire\u2011free bras.",
+  "ctr": 0.005261022684114215,
   "ideas": [
-    "Ride \u2014 all-day comfort. Shop now",
-    "Ride Guarantee \u2014 all-day comfort. Shop now",
-    "Ride: all-day comfort \u2014 Shop now",
-    "Ride Guarantee: all-day comfort \u2014 Shop now",
-    "Try the comfort Ride. Shop now",
-    "Try the comfort Ride Guarantee. Shop now"
+    "Doctors \u2014 breathable fabric. Shop now",
+    "Doctors Recommend \u2014 breathable fabric. Shop now",
+    "Breathable Design \u2014 breathable fabric. Shop now",
+    "Doctors: breathable fabric \u2014 Shop now",
+    "Doctors Recommend: breathable fabric \u2014 Shop now",
+    "Breathable Design: breathable fabric \u2014 Shop now",
+    "Try the comfort Doctors. Shop now",
+    "Try the comfort Doctors Recommend. Shop now"
   ],
-  "rationale": "Derived 2 headline anchors from creative message keywords: ride, guarantee, best, selling, briefs. Focused on benefit: all-day comfort. CTR observed: 0.0080 \u2014 used to decide CTA urgency."
+  "rationale": "Derived 3 headline anchors from creative message keywords: doctors, recommend, breathable, organic, cotton. Focused on benefit: breathable fabric. CTR observed: 0.0053 \u2014 used to decide CTA urgency."
 }

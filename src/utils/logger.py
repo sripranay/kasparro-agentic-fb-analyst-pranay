@@ -1,93 +1,105 @@
 # src/utils/logger.py
+"""
+Robust logger for the project.
+
+Features:
+- Console + rotating file handler
+- ISO timestamps
+- Optional debug_mode (set via config)
+- get_logger(name) to use per-module loggers
+- tail_log(file, lines) helper for quick checks (returns last n lines)
+"""
+
 import logging
-from logging import Logger
-from pathlib import Path
-import sys
-import json
-import time
-from typing import Optional, Callable, Any, Dict
-from contextlib import contextmanager
+import logging.handlers
+import os
+from datetime import datetime
+from typing import Optional, List
 
-LOG_DIR = Path("logs")
-LOG_DIR.mkdir(parents=True, exist_ok=True)
-DEFAULT_LOGFILE = LOG_DIR / "app.log"
+LOG_DIR = os.getenv("KASPARRO_LOG_DIR", "logs")
+LOG_FILE = os.path.join(LOG_DIR, "run.log")
+MAX_BYTES = 5 * 1024 * 1024  # 5 MB
+BACKUP_COUNT = 5
 
 
-def setup_logger(
-    name: str = "kasparro",
-    level: int = logging.INFO,
-    logfile: str = str(DEFAULT_LOGFILE),
-    console: bool = True,
-) -> Logger:
+def ensure_log_dir():
+    os.makedirs(LOG_DIR, exist_ok=True)
+
+
+def configure_root_logger(level: int = logging.INFO, console: bool = True):
     """
-    Configure and return a logger. Idempotent (safe to call multiple times).
+    Configure root logger. Safe to call multiple times.
     """
-    logger = logging.getLogger(name)
-    logger.setLevel(level)
+    ensure_log_dir()
 
-    if logger.handlers:
-        return logger
+    root = logging.getLogger()
+    if root.handlers:
+        # already configured - avoid duplicate handlers
+        return
 
-    # File handler
-    fh = logging.FileHandler(logfile, encoding="utf-8")
-    fh.setLevel(level)
-    fh_formatter = logging.Formatter(
-        "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
+    root.setLevel(level)
+
+    fmt = "%(asctime)s | %(levelname)-5s | %(name)s | %(message)s"
+    datefmt = "%Y-%m-%dT%H:%M:%SZ"
+
+    # Rotating file handler
+    file_handler = logging.handlers.RotatingFileHandler(
+        LOG_FILE, maxBytes=MAX_BYTES, backupCount=BACKUP_COUNT, encoding="utf-8"
     )
-    fh.setFormatter(fh_formatter)
-    logger.addHandler(fh)
+    file_formatter = logging.Formatter(fmt, datefmt=datefmt)
+    file_handler.setFormatter(file_formatter)
+    root.addHandler(file_handler)
 
     # Console handler
     if console:
-        ch = logging.StreamHandler(sys.stdout)
-        ch.setLevel(level)
-        ch_formatter = logging.Formatter("%(levelname)s: %(message)s")
-        ch.setFormatter(ch_formatter)
-        logger.addHandler(ch)
+        console_handler = logging.StreamHandler()
+        console_formatter = logging.Formatter(fmt, datefmt=datefmt)
+        console_handler.setFormatter(console_formatter)
+        root.addHandler(console_handler)
 
-    logger.propagate = False
+
+def get_logger(name: Optional[str] = None, level: Optional[int] = None) -> logging.Logger:
+    """
+    Returns a named logger. Call configure_root_logger() once during app start.
+    """
+    if not logging.getLogger().handlers:
+        # default configure if user forgot to call configure_root_logger
+        configure_root_logger()
+
+    logger = logging.getLogger(name)
+    if level is not None:
+        logger.setLevel(level)
     return logger
 
 
-# default logger for easy import
-logger = setup_logger()
+def tail_log(path: Optional[str] = None, lines: int = 50) -> List[str]:
+    """
+    Return the last `lines` lines from path (or default LOG_FILE).
+    Returns list of strings (lines). Safe if file doesn't exist.
+    """
+    path = path or LOG_FILE
+    if not os.path.exists(path):
+        return []
+    with open(path, "rb") as fh:
+        fh.seek(0, os.SEEK_END)
+        end = fh.tell()
+        block_size = 1024
+        data = b""
+        while end > 0 and data.count(b"\n") <= lines:
+            read_size = min(block_size, end)
+            fh.seek(end - read_size, os.SEEK_SET)
+            data = fh.read(read_size) + data
+            end -= read_size
+        # decode and split
+        text = data.decode("utf-8", errors="ignore")
+        return text.strip().splitlines()[-lines:]
 
 
-# --- convenience helpers for agent observability ----------------------------
-
-def agent_log_start(agent_name: str, details: Optional[Dict[str, Any]] = None) -> None:
-    """Log an agent start with optional details dict."""
-    msg = f"AGENT_START | {agent_name}"
-    if details:
-        try:
-            msg += " | " + json.dumps(details, default=str)
-        except Exception:
-            msg += " | (details unavailable)"
-    logger.info(msg)
-
-
-def agent_log_end(agent_name: str, details: Optional[Dict[str, Any]] = None) -> None:
-    """Log an agent end with optional details dict."""
-    msg = f"AGENT_END   | {agent_name}"
-    if details:
-        try:
-            msg += " | " + json.dumps(details, default=str)
-        except Exception:
-            msg += " | (details unavailable)"
-    logger.info(msg)
-
-
-@contextmanager
-def timed_agent(agent_name: str, details: Optional[Dict[str, Any]] = None):
-    """Context manager to measure agent execution time and log start/end."""
-    start = time.time()
-    agent_log_start(agent_name, details)
-    try:
-        yield
-    except Exception as e:
-        logger.exception(f"AGENT_ERROR | {agent_name} | {e}")
-        raise
-    finally:
-        duration = time.time() - start
-        agent_log_end(agent_name, {"duration_s": round(duration, 3)})
+# Small convenience for quick CLI usage
+if __name__ == "__main__":
+    configure_root_logger()
+    logger = get_logger("logger-test")
+    logger.info("Logger initialized")
+    print("--- last 10 log lines ---")
+    for l in tail_log(lines=10):
+        print(l)

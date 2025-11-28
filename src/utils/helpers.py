@@ -1,129 +1,109 @@
 # src/utils/helpers.py
-from typing import Tuple, Dict
-import pandas as pd
-import numpy as np
+"""
+General helpers used across agents:
+- load_config
+- ensure_dir
+- save_json, load_json
+- iso_utc_now
+- validate_schema (lightweight)
+- small backoff helper (calls retry.retry if you have that module)
+"""
+
+import json
+import os
+from datetime import datetime, timezone
+from typing import Any, Dict, Optional
+
+from pathlib import Path
+from pprint import pformat
+
+# Try to import project retry utility if present (you said you added retry.py)
+try:
+    from src.utils.retry import retry_on_exception  # type: ignore
+except Exception:
+    # fallback no-op decorator
+    def retry_on_exception(*args, **kwargs):
+        def _inner(fn):
+            return fn
+        return _inner
 
 
-def compute_kpis(df: pd.DataFrame) -> pd.DataFrame:
+def load_config(path: str = "config/config.yaml") -> Dict[str, Any]:
     """
-    Compute common advertising KPIs and return a dataframe with new columns:
-      - ctr (clicks / impressions)
-      - cpc (spend / clicks)  [NaN if clicks == 0]
-      - cpa (spend / purchases) [NaN if purchases == 0]
-      - roas (revenue / spend) [NaN if spend == 0]
-
-    Expects numeric columns: spend, impressions, clicks, purchases, revenue
+    Load YAML or JSON config.
+    Keep dependency minimal: if pyyaml present use YAML else expect JSON.
     """
-    df = df.copy()
+    import yaml  # pyyaml should be in requirements
 
-    # Safely coerce numeric fields
-    for col in ["spend", "impressions", "clicks", "purchases", "revenue"]:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce")
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Config file not found: {path}")
+
+    with open(path, "r", encoding="utf-8") as fh:
+        if path.endswith((".yaml", ".yml")):
+            return yaml.safe_load(fh)
         else:
-            df[col] = np.nan
-
-    # CTR
-    df["ctr"] = np.where(
-        df["impressions"].fillna(0) > 0,
-        df["clicks"].fillna(0) / df["impressions"].fillna(1),
-        np.nan,
-    )
-
-    # CPC
-    df["cpc"] = np.where(df["clicks"].fillna(0) > 0, df["spend"] / df["clicks"], np.nan)
-
-    # CPA
-    df["cpa"] = np.where(
-        df["purchases"].fillna(0) > 0, df["spend"] / df["purchases"], np.nan
-    )
-
-    # ROAS
-    df["roas"] = np.where(df["spend"].fillna(0) > 0, df["revenue"] / df["spend"], np.nan)
-
-    return df
+            return json.load(fh)
 
 
-def summarize_df(df: pd.DataFrame) -> Dict[str, dict]:
-    """
-    Produce simple summary statistics per column similar to pandas.describe()
-    but returns a dict of dicts for easy JSON-serialization.
-    Only numeric columns will have mean/std/min/max; object columns get counts & top.
-    """
-    summary = {}
-    for col in df.columns:
-        series = df[col]
-        if pd.api.types.is_numeric_dtype(series):
-            summary[col] = {
-                "count": int(series.count()),
-                "mean": None if series.count() == 0 else float(series.mean()),
-                "std": None if series.count() == 0 else float(series.std()),
-                "min": None if series.count() == 0 else float(series.min()),
-                "25%": None,
-                "50%": None if series.count() == 0 else float(series.median()),
-                "75%": None,
-                "max": None if series.count() == 0 else float(series.max()),
-            }
+def ensure_dir(path: str):
+    Path(path).mkdir(parents=True, exist_ok=True)
+
+
+def iso_utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def save_json(obj: Any, path: str, pretty: bool = True):
+    ensure_dir(os.path.dirname(path) or ".")
+    with open(path, "w", encoding="utf-8") as fh:
+        if pretty:
+            json.dump(obj, fh, ensure_ascii=False, indent=2)
         else:
-            # treat as categorical/text
-            top = None
-            freq = None
-            if series.count() > 0:
-                top = series.dropna().astype(str).mode().iloc[0] if not series.dropna().empty else None
-                freq = int(series.dropna().astype(str).value_counts().get(top, 0)) if top else None
-            summary[col] = {
-                "count": int(series.count()),
-                "unique": int(series.nunique(dropna=True)),
-                "top": top,
-                "freq": freq,
-            }
-    return summary
+            json.dump(obj, fh, ensure_ascii=False)
 
 
-def split_windows(
-    df: pd.DataFrame, date_col: str = "date", recent_days: int = 7, prev_days: int = 7
-) -> Tuple[pd.DataFrame, pd.DataFrame]:
+def load_json(path: str) -> Any:
+    with open(path, "r", encoding="utf-8") as fh:
+        return json.load(fh)
+
+
+def save_report_md(text: str, path: str = "reports/report.md"):
+    ensure_dir(os.path.dirname(path) or ".")
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(text)
+
+
+def validate_schema(df_columns: list, required: Optional[list] = None) -> Dict[str, Any]:
     """
-    Split dataset into two windows based on the latest date in `date_col`:
-      - recent window: last `recent_days`
-      - previous window: the `prev_days` immediately before the recent window
-
-    Returns: (recent_df, previous_df)
-    Expects date_col to be parseable by pandas.to_datetime.
+    Lightweight schema check — returns summary dict:
+    {ok: bool, missing: [...], extra: [...]}
     """
-    if date_col not in df.columns:
-        raise ValueError(f"Date column '{date_col}' not found in DataFrame")
-
-    df = df.copy()
-    df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
-    df = df.dropna(subset=[date_col])
-    df = df.sort_values(by=date_col)
-
-    last_date = df[date_col].max()
-    if pd.isna(last_date):
-        return pd.DataFrame(), pd.DataFrame()
-
-    recent_start = last_date - pd.Timedelta(days=recent_days - 1)
-    prev_end = recent_start - pd.Timedelta(days=1)
-    prev_start = prev_end - pd.Timedelta(days=prev_days - 1)
-
-    recent_df = df[df[date_col] >= recent_start]
-    prev_df = df[(df[date_col] >= prev_start) & (df[date_col] <= prev_end)]
-
-    return recent_df, prev_df
+    required = required or [
+        "campaign_name",
+        "adset_name",
+        "date",
+        "spend",
+        "impressions",
+        "clicks",
+        "purchases",
+        "revenue",
+    ]
+    present = set(df_columns)
+    required_set = set(required)
+    missing = sorted(list(required_set - present))
+    extra = sorted(list(present - required_set))
+    return {"ok": len(missing) == 0, "missing": missing, "extra": extra}
 
 
-def percent_change(a: float, b: float) -> float:
-    """
-    Compute percentage change from b -> a (i.e., (a - b) / b * 100).
-    Returns a float (percent). If base is zero, returns np.nan.
-    """
-    try:
-        a = float(a)
-        b = float(b)
-    except Exception:
-        return float("nan")
+# Example wrapper used by DataAgent to add retries for load_data
+@retry_on_exception(max_attempts=3, initial_wait=0.5, backoff_factor=2)
+def safe_read_csv(path: str, **kwargs):
+    import pandas as pd
 
-    if b == 0:
-        return float("nan")
-    return (a - b) / b * 100.0
+    return pd.read_csv(path, **kwargs)
+
+
+if __name__ == "__main__":
+    # quick sanity
+    print("iso_utc_now:", iso_utc_now())
+    print("validate_schema example:", pformat(validate_schema(["campaign_name", "date", "spend", "impressions", "clicks", "purchases", "revenue"])))

@@ -1,6 +1,6 @@
 # Kasparro Agentic Facebook Ads Performance Analyst  
 ### Multi-Agent System for ROAS Diagnosis & Creative Recommendations  
-**Author:** Pranay  
+
 
 ---
 
@@ -75,6 +75,7 @@ Breaks the user query into structured steps:
 │   └── utils/         # loader, kpi calculations
 ├── run.py             # main orchestrator
 └── README.md
+```
 ---
 
 ## ▶️ How to Run the System
@@ -104,6 +105,49 @@ Validated insights: 1 / 5
 Creatives generated for: WOMEN Seamless Everyday
 Outputs saved to: reports/
 ```
+### **Sample Output**
+Example run:
+python run.py "Analyze ROAS drop"
+
+Sample console output:
+----------------------
+```md
+Loaded dataset: 306 rows
+Generated 5 hypotheses
+Validated 3 insights
+Generated creatives for 1 low-CTR campaign
+Saved insights.json, creatives.json, and report.md in /reports
+
+```
+### **Sample insights.json snippet:**
+```
+[
+  {
+    "hypothesis": "ROAS dropped due to a fall in CTR.",
+    "confidence": 0.72,
+    "evidence": {
+      "ctr_change": "-22.41%",
+      "roas_change": "-18.10%"
+    }
+  }
+]
+```
+
+### **Sample creatives.json snippet:**
+```
+[
+  {
+    "campaign_name": "WOMEN Seamless Everyday",
+    "creative_suggestions": [
+      {
+        "headline": "Soft Comfort Made Daily",
+        "body": "Feel all-day comfort with lightweight seamless fit.",
+        "cta": "Shop Now"
+      }
+    ]
+  }
+]
+```
  ### **Dataset Used**
 A synthetic e-commerce Facebook Ads dataset containing:
 campaign_name, adset_name, date, spend, impressions, clicks, ctr, purchases, revenue, roas, creative_message, creative_type, audience_type, platform, country
@@ -114,17 +158,9 @@ arduino
 Copy code
 config/config.yaml
 ```
-### **Evaluation Criteria Covered**
-Planner → Evaluator loop implemented
+---
 
-Structured prompts + reasoning
 
-Quantitative validation
 
-Creative message generation
-
-Logs + JSON outputs
-
-Final report included
 
 

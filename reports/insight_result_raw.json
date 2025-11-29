@@ -1,42 +1,29 @@
-{
-  "recent_window": {
-    "spend": 150936.68,
-    "impressions": "86641669",
-    "clicks": 1072482.0,
-    "purchases": "28517",
-    "revenue": 992356.6799999999,
-    "ctr": 0.012378362655964072,
-    "cpc": 0.14073586316600184,
-    "cpa": 5.292866711084616,
-    "roas": 6.574655544298444
+[
+  {
+    "hypothesis": "CTR fell - creatives may be fatiguing or less relevant.",
+    "evidence": {
+      "metric": "ctr",
+      "recent": 0.014524888011562837,
+      "previous": 0.014875992217244064
+    },
+    "validated": false
   },
-  "previous_window": {
-    "spend": 155351.96000000002,
-    "impressions": "86996972",
-    "clicks": 1084776.0,
-    "purchases": "28979",
-    "revenue": 967378.3700000001,
-    "ctr": 0.01246912363800432,
-    "cpc": 0.1432110961156958,
-    "cpa": 5.360846129956176,
-    "roas": 6.227011039963705
+  {
+    "hypothesis": "Spend decreased - could limit reach and impressions.",
+    "evidence": {
+      "metric": "spend",
+      "recent": 461.95328,
+      "previous": 433.065
+    },
+    "validated": false
   },
-  "percent_changes": {
-    "spend": -2.842114125885523,
-    "impressions": -0.40840846736596764,
-    "clicks": -1.133321533662249,
-    "purchases": -1.5942579109009973,
-    "revenue": 2.582062073602061,
-    "ctr": -0.7278858135917441,
-    "cpc": -1.7283807029130567,
-    "cpa": -1.2680725621221218,
-    "roas": 5.582847085120384
-  },
-  "hypotheses": [
-    "ROAS improved \u2014 campaigns are becoming more efficient.",
-    "CTR fell \u2014 creatives may be fatiguing or less relevant.",
-    "Spend decreased \u2014 could limit reach and impressions.",
-    "Impressions dropped \u2014 audience size or delivery issues possible.",
-    "Purchases down \u2014 conversion drop or weaker creative performance."
-  ]
-}
+  {
+    "hypothesis": "Purchases down - conversion drop or weaker creative performance.",
+    "evidence": {
+      "metric": "purchases",
+      "recent": 94.424,
+      "previous": 80.0
+    },
+    "validated": false
+  }
+]

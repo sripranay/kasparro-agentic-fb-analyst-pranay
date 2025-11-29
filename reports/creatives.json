@@ -1,16 +1,866 @@
-{
-  "campaign_name": "WOMEN Seamless Everydy",
-  "current_message": "Doctors recommend breathable organic cotton \u2014 meet our women wire\u2011free bras.",
-  "ctr": 0.005261022684114215,
-  "ideas": [
-    "Doctors \u2014 breathable fabric. Shop now",
-    "Doctors Recommend \u2014 breathable fabric. Shop now",
-    "Breathable Design \u2014 breathable fabric. Shop now",
-    "Doctors: breathable fabric \u2014 Shop now",
-    "Doctors Recommend: breathable fabric \u2014 Shop now",
-    "Breathable Design: breathable fabric \u2014 Shop now",
-    "Try the comfort Doctors. Shop now",
-    "Try the comfort Doctors Recommend. Shop now"
-  ],
-  "rationale": "Derived 3 headline anchors from creative message keywords: doctors, recommend, breathable, organic, cotton. Focused on benefit: breathable fabric. CTR observed: 0.0053 \u2014 used to decide CTA urgency."
-}
+[
+  {
+    "campaign_name": "MEN COMF RTMAX LAUNCH",
+    "headline": "MEN COMF RTMAX LAUNCH — Try our new fit #1",
+    "body": "Breathable microfiber that moves with you — limited offer on men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMF RTMAX LAUNCH",
+    "headline": "MEN COMF RTMAX LAUNCH — Try our new fit #2",
+    "body": "Breathable microfiber that moves with you — limited offer on men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMF RTMAX LAUNCH",
+    "headline": "MEN COMF RTMAX LAUNCH — Try our new fit #3",
+    "body": "Breathable microfiber that moves with you — limited offer on men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMA LAUNCH",
+    "headline": "MEN COMFORTMA LAUNCH — Try our new fit #1",
+    "body": "Invisible under tees — seamless men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMA LAUNCH",
+    "headline": "MEN COMFORTMA LAUNCH — Try our new fit #2",
+    "body": "Invisible under tees — seamless men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMA LAUNCH",
+    "headline": "MEN COMFORTMA LAUNCH — Try our new fit #3",
+    "body": "Invisible under tees — seamless men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX  AUNCH",
+    "headline": "MEN COMFORTMAX  AUNCH — Try our new fit #1",
+    "body": "Summer‑ready essentials — sweat‑wicking men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX  AUNCH",
+    "headline": "MEN COMFORTMAX  AUNCH — Try our new fit #2",
+    "body": "Summer‑ready essentials — sweat‑wicking men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX  AUNCH",
+    "headline": "MEN COMFORTMAX  AUNCH — Try our new fit #3",
+    "body": "Summer‑ready essentials — sweat‑wicking men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX LAUNCH",
+    "headline": "MEN COMFORTMAX LAUNCH — Try our new fit #1",
+    "body": "Seamless confidence for every day — new men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX LAUNCH",
+    "headline": "MEN COMFORTMAX LAUNCH — Try our new fit #2",
+    "body": "Seamless confidence for every day — new men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MEN COMFORTMAX LAUNCH",
+    "headline": "MEN COMFORTMAX LAUNCH — Try our new fit #3",
+    "body": "Seamless confidence for every day — new men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C mfortMax  Launch",
+    "headline": "Men  C mfortMax  Launch — Try our new fit #1",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C mfortMax  Launch",
+    "headline": "Men  C mfortMax  Launch — Try our new fit #2",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C mfortMax  Launch",
+    "headline": "Men  C mfortMax  Launch — Try our new fit #3",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C-mfortMax  Launch",
+    "headline": "Men  C-mfortMax  Launch — Try our new fit #1",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C-mfortMax  Launch",
+    "headline": "Men  C-mfortMax  Launch — Try our new fit #2",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  C-mfortMax  Launch",
+    "headline": "Men  C-mfortMax  Launch — Try our new fit #3",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Co fortMax  Launch",
+    "headline": "Men  Co fortMax  Launch — Try our new fit #1",
+    "body": "Summer‑ready essentials — sweat‑wicking men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Co fortMax  Launch",
+    "headline": "Men  Co fortMax  Launch — Try our new fit #2",
+    "body": "Summer‑ready essentials — sweat‑wicking men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Co fortMax  Launch",
+    "headline": "Men  Co fortMax  Launch — Try our new fit #3",
+    "body": "Summer‑ready essentials — sweat‑wicking men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  CofortMax  Launch",
+    "headline": "Men  CofortMax  Launch — Try our new fit #1",
+    "body": "No ride‑up guarantee — best‑selling men briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  CofortMax  Launch",
+    "headline": "Men  CofortMax  Launch — Try our new fit #2",
+    "body": "No ride‑up guarantee — best‑selling men briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  CofortMax  Launch",
+    "headline": "Men  CofortMax  Launch — Try our new fit #3",
+    "body": "No ride‑up guarantee — best‑selling men briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Comf rtMax  Launch",
+    "headline": "Men  Comf rtMax  Launch — Try our new fit #1",
+    "body": "Doctors recommend breathable bamboo — meet our men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Comf rtMax  Launch",
+    "headline": "Men  Comf rtMax  Launch — Try our new fit #2",
+    "body": "Doctors recommend breathable bamboo — meet our men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  Comf rtMax  Launch",
+    "headline": "Men  Comf rtMax  Launch — Try our new fit #3",
+    "body": "Doctors recommend breathable bamboo — meet our men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMa-  Launch",
+    "headline": "Men  ComfortMa-  Launch — Try our new fit #1",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMa-  Launch",
+    "headline": "Men  ComfortMa-  Launch — Try our new fit #2",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMa-  Launch",
+    "headline": "Men  ComfortMa-  Launch — Try our new fit #3",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMax  Launch",
+    "headline": "Men  ComfortMax  Launch — Try our new fit #1",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMax  Launch",
+    "headline": "Men  ComfortMax  Launch — Try our new fit #2",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men  ComfortMax  Launch",
+    "headline": "Men  ComfortMax  Launch — Try our new fit #3",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comf-rtMax Launch",
+    "headline": "Men Comf-rtMax Launch — Try our new fit #1",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comf-rtMax Launch",
+    "headline": "Men Comf-rtMax Launch — Try our new fit #2",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comf-rtMax Launch",
+    "headline": "Men Comf-rtMax Launch — Try our new fit #3",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tMax Launch",
+    "headline": "Men Comfo tMax Launch — Try our new fit #1",
+    "body": "Doctors recommend breathable bamboo — meet our men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tMax Launch",
+    "headline": "Men Comfo tMax Launch — Try our new fit #2",
+    "body": "Doctors recommend breathable bamboo — meet our men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tMax Launch",
+    "headline": "Men Comfo tMax Launch — Try our new fit #3",
+    "body": "Doctors recommend breathable bamboo — meet our men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tmax Launch",
+    "headline": "Men Comfo tmax Launch — Try our new fit #1",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tmax Launch",
+    "headline": "Men Comfo tmax Launch — Try our new fit #2",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfo tmax Launch",
+    "headline": "Men Comfo tmax Launch — Try our new fit #3",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComforMax Launch",
+    "headline": "Men ComforMax Launch — Try our new fit #1",
+    "body": "Doctors recommend breathable microfiber — meet our men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComforMax Launch",
+    "headline": "Men ComforMax Launch — Try our new fit #2",
+    "body": "Doctors recommend breathable microfiber — meet our men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComforMax Launch",
+    "headline": "Men ComforMax Launch — Try our new fit #3",
+    "body": "Doctors recommend breathable microfiber — meet our men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfort-ax Launch",
+    "headline": "Men Comfort-ax Launch — Try our new fit #1",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfort-ax Launch",
+    "headline": "Men Comfort-ax Launch — Try our new fit #2",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfort-ax Launch",
+    "headline": "Men Comfort-ax Launch — Try our new fit #3",
+    "body": "Stretch that snaps back — durable men trunks.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax L unch",
+    "headline": "Men ComfortMax L unch — Try our new fit #1",
+    "body": "Stretch that snaps back — durable men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax L unch",
+    "headline": "Men ComfortMax L unch — Try our new fit #2",
+    "body": "Stretch that snaps back — durable men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax L unch",
+    "headline": "Men ComfortMax L unch — Try our new fit #3",
+    "body": "Stretch that snaps back — durable men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lau-ch",
+    "headline": "Men ComfortMax Lau-ch — Try our new fit #1",
+    "body": "Ultra‑soft waistband, no marks — premium men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lau-ch",
+    "headline": "Men ComfortMax Lau-ch — Try our new fit #2",
+    "body": "Ultra‑soft waistband, no marks — premium men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lau-ch",
+    "headline": "Men ComfortMax Lau-ch — Try our new fit #3",
+    "body": "Ultra‑soft waistband, no marks — premium men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Launch",
+    "headline": "Men ComfortMax Launch — Try our new fit #1",
+    "body": "Breathable organic cotton that moves with you — limited offer on men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Launch",
+    "headline": "Men ComfortMax Launch — Try our new fit #2",
+    "body": "Breathable organic cotton that moves with you — limited offer on men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Launch",
+    "headline": "Men ComfortMax Launch — Try our new fit #3",
+    "body": "Breathable organic cotton that moves with you — limited offer on men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lunch",
+    "headline": "Men ComfortMax Lunch — Try our new fit #1",
+    "body": "No ride‑up guarantee — best‑selling men athletic briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lunch",
+    "headline": "Men ComfortMax Lunch — Try our new fit #2",
+    "body": "No ride‑up guarantee — best‑selling men athletic briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax Lunch",
+    "headline": "Men ComfortMax Lunch — Try our new fit #3",
+    "body": "No ride‑up guarantee — best‑selling men athletic briefs back in stock.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax_Launch",
+    "headline": "Men ComfortMax_Launch — Try our new fit #1",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax_Launch",
+    "headline": "Men ComfortMax_Launch — Try our new fit #2",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men ComfortMax_Launch",
+    "headline": "Men ComfortMax_Launch — Try our new fit #3",
+    "body": "Summer‑ready essentials — sweat‑wicking men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortma- Launch",
+    "headline": "Men Comfortma- Launch — Try our new fit #1",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortma- Launch",
+    "headline": "Men Comfortma- Launch — Try our new fit #2",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortma- Launch",
+    "headline": "Men Comfortma- Launch — Try our new fit #3",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lau ch",
+    "headline": "Men Comfortmax Lau ch — Try our new fit #1",
+    "body": "Confidence starts inside — elevate with men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lau ch",
+    "headline": "Men Comfortmax Lau ch — Try our new fit #2",
+    "body": "Confidence starts inside — elevate with men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lau ch",
+    "headline": "Men Comfortmax Lau ch — Try our new fit #3",
+    "body": "Confidence starts inside — elevate with men inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Launch",
+    "headline": "Men Comfortmax Launch — Try our new fit #1",
+    "body": "Breathable bamboo that moves with you — limited offer on men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Launch",
+    "headline": "Men Comfortmax Launch — Try our new fit #2",
+    "body": "Breathable bamboo that moves with you — limited offer on men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Launch",
+    "headline": "Men Comfortmax Launch — Try our new fit #3",
+    "body": "Breathable bamboo that moves with you — limited offer on men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lunch",
+    "headline": "Men Comfortmax Lunch — Try our new fit #1",
+    "body": "Push comfort, not wires — everyday men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lunch",
+    "headline": "Men Comfortmax Lunch — Try our new fit #2",
+    "body": "Push comfort, not wires — everyday men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men Comfortmax Lunch",
+    "headline": "Men Comfortmax Lunch — Try our new fit #3",
+    "body": "Push comfort, not wires — everyday men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men-Comfortmax Launch",
+    "headline": "Men-Comfortmax Launch — Try our new fit #1",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men-Comfortmax Launch",
+    "headline": "Men-Comfortmax Launch — Try our new fit #2",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men-Comfortmax Launch",
+    "headline": "Men-Comfortmax Launch — Try our new fit #3",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MenComfortmax Launch",
+    "headline": "MenComfortmax Launch — Try our new fit #1",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MenComfortmax Launch",
+    "headline": "MenComfortmax Launch — Try our new fit #2",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "MenComfortmax Launch",
+    "headline": "MenComfortmax Launch — Try our new fit #3",
+    "body": "Wire‑free ease, cloud‑soft cups — men trunks that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Co fortMax_Launch",
+    "headline": "Men_Co fortMax_Launch — Try our new fit #1",
+    "body": "Breathable modal that moves with you — limited offer on men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Co fortMax_Launch",
+    "headline": "Men_Co fortMax_Launch — Try our new fit #2",
+    "body": "Breathable modal that moves with you — limited offer on men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Co fortMax_Launch",
+    "headline": "Men_Co fortMax_Launch — Try our new fit #3",
+    "body": "Breathable modal that moves with you — limited offer on men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Com-ortMax_Launch",
+    "headline": "Men_Com-ortMax_Launch — Try our new fit #1",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Com-ortMax_Launch",
+    "headline": "Men_Com-ortMax_Launch — Try our new fit #2",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Com-ortMax_Launch",
+    "headline": "Men_Com-ortMax_Launch — Try our new fit #3",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Comf-rtMax_Launch",
+    "headline": "Men_Comf-rtMax_Launch — Try our new fit #1",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Comf-rtMax_Launch",
+    "headline": "Men_Comf-rtMax_Launch — Try our new fit #2",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_Comf-rtMax_Launch",
+    "headline": "Men_Comf-rtMax_Launch — Try our new fit #3",
+    "body": "Cooling mesh panels for workouts — men boxers you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_ComfortMax_Launch",
+    "headline": "Men_ComfortMax_Launch — Try our new fit #1",
+    "body": "Cooling mesh panels for workouts — men athletic briefs you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_ComfortMax_Launch",
+    "headline": "Men_ComfortMax_Launch — Try our new fit #2",
+    "body": "Cooling mesh panels for workouts — men athletic briefs you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Men_ComfortMax_Launch",
+    "headline": "Men_ComfortMax_Launch — Try our new fit #3",
+    "body": "Cooling mesh panels for workouts — men athletic briefs you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Mn ComfortMax Launch",
+    "headline": "Mn ComfortMax Launch — Try our new fit #1",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Mn ComfortMax Launch",
+    "headline": "Mn ComfortMax Launch — Try our new fit #2",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Mn ComfortMax Launch",
+    "headline": "Mn ComfortMax Launch — Try our new fit #3",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOME SEAMLESS EVERYDAY",
+    "headline": "WOME SEAMLESS EVERYDAY — Try our new fit #1",
+    "body": "Ultra‑soft waistband, no marks — premium women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOME SEAMLESS EVERYDAY",
+    "headline": "WOME SEAMLESS EVERYDAY — Try our new fit #2",
+    "body": "Ultra‑soft waistband, no marks — premium women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOME SEAMLESS EVERYDAY",
+    "headline": "WOME SEAMLESS EVERYDAY — Try our new fit #3",
+    "body": "Ultra‑soft waistband, no marks — premium women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN  Seamless  Everyday",
+    "headline": "WOMEN  Seamless  Everyday — Try our new fit #1",
+    "body": "Hot & comfy: women wire‑free bras now 20% off — feel the difference.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN  Seamless  Everyday",
+    "headline": "WOMEN  Seamless  Everyday — Try our new fit #2",
+    "body": "Hot & comfy: women wire‑free bras now 20% off — feel the difference.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN  Seamless  Everyday",
+    "headline": "WOMEN  Seamless  Everyday — Try our new fit #3",
+    "body": "Hot & comfy: women wire‑free bras now 20% off — feel the difference.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVE YDAY",
+    "headline": "WOMEN SEAMLESS EVE YDAY — Try our new fit #1",
+    "body": "Invisible under tees — seamless women wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVE YDAY",
+    "headline": "WOMEN SEAMLESS EVE YDAY — Try our new fit #2",
+    "body": "Invisible under tees — seamless women wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVE YDAY",
+    "headline": "WOMEN SEAMLESS EVE YDAY — Try our new fit #3",
+    "body": "Invisible under tees — seamless women wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVERYDAY",
+    "headline": "WOMEN SEAMLESS EVERYDAY — Try our new fit #1",
+    "body": "Wire‑free ease, cloud‑soft cups — women panties that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVERYDAY",
+    "headline": "WOMEN SEAMLESS EVERYDAY — Try our new fit #2",
+    "body": "Wire‑free ease, cloud‑soft cups — women panties that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN SEAMLESS EVERYDAY",
+    "headline": "WOMEN SEAMLESS EVERYDAY — Try our new fit #3",
+    "body": "Wire‑free ease, cloud‑soft cups — women panties that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN Seamless Everyday",
+    "headline": "WOMEN Seamless Everyday — Try our new fit #1",
+    "body": "Seamless confidence for every day — new women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN Seamless Everyday",
+    "headline": "WOMEN Seamless Everyday — Try our new fit #2",
+    "body": "Seamless confidence for every day — new women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN Seamless Everyday",
+    "headline": "WOMEN Seamless Everyday — Try our new fit #3",
+    "body": "Seamless confidence for every day — new women panties.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Ever-day",
+    "headline": "WOMEN_Seamless_Ever-day — Try our new fit #1",
+    "body": "3‑pack deal ends tonight — upgrade your women drawer with wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Ever-day",
+    "headline": "WOMEN_Seamless_Ever-day — Try our new fit #2",
+    "body": "3‑pack deal ends tonight — upgrade your women drawer with wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Ever-day",
+    "headline": "WOMEN_Seamless_Ever-day — Try our new fit #3",
+    "body": "3‑pack deal ends tonight — upgrade your women drawer with wire‑free bras.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Everyday",
+    "headline": "WOMEN_Seamless_Everyday — Try our new fit #1",
+    "body": "Wire‑free ease, cloud‑soft cups — women boyshorts that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Everyday",
+    "headline": "WOMEN_Seamless_Everyday — Try our new fit #2",
+    "body": "Wire‑free ease, cloud‑soft cups — women boyshorts that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "WOMEN_Seamless_Everyday",
+    "headline": "WOMEN_Seamless_Everyday — Try our new fit #3",
+    "body": "Wire‑free ease, cloud‑soft cups — women boyshorts that fits right.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Women Seamless Everyday",
+    "headline": "Women Seamless Everyday — Try our new fit #1",
+    "body": "Cooling mesh panels for workouts — women boyshorts you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Women Seamless Everyday",
+    "headline": "Women Seamless Everyday — Try our new fit #2",
+    "body": "Cooling mesh panels for workouts — women boyshorts you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "Women Seamless Everyday",
+    "headline": "Women Seamless Everyday — Try our new fit #3",
+    "body": "Cooling mesh panels for workouts — women boyshorts you’ll actually love.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en comfortmax launch",
+    "headline": "en comfortmax launch — Try our new fit #1",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en comfortmax launch",
+    "headline": "en comfortmax launch — Try our new fit #2",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en comfortmax launch",
+    "headline": "en comfortmax launch — Try our new fit #3",
+    "body": "All‑day comfort, zero pinch — try our men athletic briefs!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en_ComfortMax_Launch",
+    "headline": "en_ComfortMax_Launch — Try our new fit #1",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en_ComfortMax_Launch",
+    "headline": "en_ComfortMax_Launch — Try our new fit #2",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "en_ComfortMax_Launch",
+    "headline": "en_ComfortMax_Launch — Try our new fit #3",
+    "body": "Push comfort, not wires — everyday men athletic briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men co fortmax launch",
+    "headline": "men co fortmax launch — Try our new fit #1",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men co fortmax launch",
+    "headline": "men co fortmax launch — Try our new fit #2",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men co fortmax launch",
+    "headline": "men co fortmax launch — Try our new fit #3",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfor-max launch",
+    "headline": "men comfor-max launch — Try our new fit #1",
+    "body": "Seamless confidence for every day — new men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfor-max launch",
+    "headline": "men comfor-max launch — Try our new fit #2",
+    "body": "Seamless confidence for every day — new men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfor-max launch",
+    "headline": "men comfor-max launch — Try our new fit #3",
+    "body": "Seamless confidence for every day — new men briefs.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfortmax launch",
+    "headline": "men comfortmax launch — Try our new fit #1",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfortmax launch",
+    "headline": "men comfortmax launch — Try our new fit #2",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfortmax launch",
+    "headline": "men comfortmax launch — Try our new fit #3",
+    "body": "All‑day comfort, zero pinch — try our men inner vests!Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfotmax launch",
+    "headline": "men comfotmax launch — Try our new fit #1",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfotmax launch",
+    "headline": "men comfotmax launch — Try our new fit #2",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men comfotmax launch",
+    "headline": "men comfotmax launch — Try our new fit #3",
+    "body": "Doctors recommend breathable bamboo — meet our men boxers.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men omfortmax launch",
+    "headline": "men omfortmax launch — Try our new fit #1",
+    "body": "3‑pack deal ends tonight — upgrade your men drawer with inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men omfortmax launch",
+    "headline": "men omfortmax launch — Try our new fit #2",
+    "body": "3‑pack deal ends tonight — upgrade your men drawer with inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "men omfortmax launch",
+    "headline": "men omfortmax launch — Try our new fit #3",
+    "body": "3‑pack deal ends tonight — upgrade your men drawer with inner vests.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "women seamless everyday",
+    "headline": "women seamless everyday — Try our new fit #1",
+    "body": "Doctors recommend breathable organic cotton — meet our women boyshorts.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "women seamless everyday",
+    "headline": "women seamless everyday — Try our new fit #2",
+    "body": "Doctors recommend breathable organic cotton — meet our women boyshorts.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  },
+  {
+    "campaign_name": "women seamless everyday",
+    "headline": "women seamless everyday — Try our new fit #3",
+    "body": "Doctors recommend breathable organic cotton — meet our women boyshorts.Now available. Limited time offer.",
+    "cta": "Shop Now"
+  }
+]

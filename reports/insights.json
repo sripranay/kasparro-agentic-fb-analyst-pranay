@@ -1,34 +1,35 @@
-{
-  "validated_hypotheses": [
-    {
-      "hypothesis": "ROAS improved \u2014 campaigns are becoming more efficient.",
-      "evidence": "roas changed by 5.58% (recent: 6.574655544298444, previous: 6.227011039963705)",
-      "confidence": 0.251,
-      "validated": true
+[
+  {
+    "hypothesis": "CTR fell - creatives may be fatiguing or less relevant.",
+    "evidence": {
+      "metric": "ctr",
+      "recent": 0.014524888011562837,
+      "previous": 0.014875992217244064,
+      "pct_change": -2.3602069734496856
     },
-    {
-      "hypothesis": "CTR fell \u2014 creatives may be fatiguing or less relevant.",
-      "evidence": "CTR changed by -0.73% (recent: 0.0124, previous: 0.0125)",
-      "confidence": 0.044,
-      "validated": false
+    "validated": true,
+    "confidence": 0.023602069734496856
+  },
+  {
+    "hypothesis": "Spend decreased - could limit reach and impressions.",
+    "evidence": {
+      "metric": "spend",
+      "recent": 461.95328,
+      "previous": 433.065,
+      "pct_change": 6.670656829806151
     },
-    {
-      "hypothesis": "Spend decreased \u2014 could limit reach and impressions.",
-      "evidence": "spend changed by -2.84% (recent: 150936.68, previous: 155351.96000000002)",
-      "confidence": 0.099,
-      "validated": false
+    "validated": true,
+    "confidence": 0.06670656829806151
+  },
+  {
+    "hypothesis": "Purchases down - conversion drop or weaker creative performance.",
+    "evidence": {
+      "metric": "purchases",
+      "recent": 94.424,
+      "previous": 80.0,
+      "pct_change": 18.03000000000001
     },
-    {
-      "hypothesis": "Impressions dropped \u2014 audience size or delivery issues possible.",
-      "evidence": "impressions changed by -0.41% (recent: 86641669, previous: 86996972)",
-      "confidence": 0.057,
-      "validated": false
-    },
-    {
-      "hypothesis": "Purchases down \u2014 conversion drop or weaker creative performance.",
-      "evidence": "purchases changed by -1.59% (recent: 28517, previous: 28979)",
-      "confidence": 0.136,
-      "validated": false
-    }
-  ]
-}
+    "validated": true,
+    "confidence": 0.18030000000000007
+  }
+]
